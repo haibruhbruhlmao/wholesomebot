@@ -37,28 +37,14 @@
                         s4d.client.emit(packet.t, guild, channel, message, member, packet.d.emoji.name);
                     }
                 });
-                s4d.client.login('ODY2NTA4MzU5NDE0OTcyNDQ2.YPTkyw.WF6RX39nQIfmaRGS52q8lFJdshU').catch((e) => { s4d.tokenInvalid = true; s4d.tokenError = e; });
+                s4d.client.login('ODY2NTA4MzU5NDE0OTcyNDQ2.YPTkyw.yL5QAyl_yIZDTdoN4zGYhp5e8vU').catch((e) => { s4d.tokenInvalid = true; s4d.tokenError = e; });
 
 s4d.client.on('message', async (s4dmessage) => {
-  if ((s4dmessage.channel) == s4d.client.channels.cache.get('768434117054300203')) {
-    if ((s4dmessage.channel) == s4d.client.channels.cache.get('806816204445843456')) {
-      if (((s4dmessage.member).user.bot) != true) {
-        if ((s4dmessage.content).charAt(0) == '?') {
-          if ((s4dmessage.content).charAt(0) == '-') {
-            if ((s4dmessage.content).charAt(0) == '.') {
-              if ((s4dmessage.content).charAt(0) == ';;') {
-                if ((s4dmessage.content).charAt(0) == '_') {
-                  if ((s4dmessage.content).charAt(0) == 'ch!') {
-                    if ((s4dmessage.content).charAt(0) == 'zt!') {
-                      s4dmessage.delete();
-                      s4dmessage.channel.send(String(('** Yêu cầu chat ở ' + String(s4d.client.channels.cache.get('806815363438346260')))));
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
+  if (((s4dmessage.member).user.bot) == false) {
+    if ((s4dmessage.channel) == s4d.client.channels.cache.get('768434117054300203') || (s4dmessage.channel) == s4d.client.channels.cache.get('806816204445843456')) {
+      if ((s4dmessage.content).charAt(0) == '?' || (s4dmessage.content).charAt(0) == '-' || (s4dmessage.content).charAt(0) == '.' || (s4dmessage.content).charAt(0) == ';;' || (s4dmessage.content).charAt(0) == '_' || (s4dmessage.content).charAt(0) == 'ch!' || (s4dmessage.content).charAt(0) == 'zt!') {
+        s4dmessage.delete();
+        s4dmessage.channel.send(String(('** Yêu cầu chat ở ' + String(s4d.client.channels.cache.get('806815363438346260')))));
       }
     }
   }
