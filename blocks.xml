@@ -1,0 +1,268 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="s4d_login" id="$d_?ang2aY?CVy%.UgKL" x="87" y="-255">
+    <value name="TOKEN">
+      <block type="text" id="%k=jWs77TUvL2k9`]!FD">
+        <field name="TEXT">ODY2NTA4MzU5NDE0OTcyNDQ2.YPTkyw.WF6RX39nQIfmaRGS52q8lFJdshU</field>
+      </block>
+    </value>
+  </block>
+  <block type="s4d_on_message" id="0cPsWsBVhjylSr0_$M%l" x="94" y="-80">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="iD0KR@2BRMr(bw[]hf^x">
+        <value name="IF0">
+          <block type="logic_compare" id="U462lqk*[1$0s;eGKB7y">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="s4d_message_channel" id="L%aQ#i!08VA#,=pcXjJ]"></block>
+            </value>
+            <value name="B">
+              <block type="s4d_get_channel" id="U;}(cHs|u5)~X^Za!=sO">
+                <field name="SEARCH_TYPE">ID</field>
+                <value name="VALUE">
+                  <block type="text" id=")#Rzk7E8_zk^x}BEA^-C">
+                    <field name="TEXT">768434117054300203</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_if" id="q#MQhnfZTav!@Pn7.0,O">
+            <value name="IF0">
+              <block type="logic_compare" id="J]5ErU`qe2;}h%$7HvC*">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="s4d_message_channel" id="%MQScf=-;fH#2WeUHdke"></block>
+                </value>
+                <value name="B">
+                  <block type="s4d_get_channel" id="QHHJjN?R(?mzhrbWgN;w">
+                    <field name="SEARCH_TYPE">ID</field>
+                    <value name="VALUE">
+                      <block type="text" id="T^V:#hVZ.GEOr(`AYdmV">
+                        <field name="TEXT">806816204445843456</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="controls_if" id="Zk@fwDfv#`1P!at~},rF">
+                <value name="IF0">
+                  <block type="logic_compare" id="S,nBc!n2Baclu?uziCZn">
+                    <field name="OP">NEQ</field>
+                    <value name="A">
+                      <block type="s4d_member_is_bot" id="onGnm8DFD@Hm!MoP[kpu">
+                        <value name="MEMBER">
+                          <block type="s4d_message_author" id="aSrVGJ=J%NW=vKX@;lve"></block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="logic_boolean" id="JzFxZupqfL~pYsyui$pL">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="controls_if" id="qb$|VNOe-sPaN_6dQY30">
+                    <value name="IF0">
+                      <block type="logic_compare" id="?lD5$Pi%jGzj?~4waaby">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="text_charAt" id="sSW!:Nzz=tsC)I+ChwXV">
+                            <mutation at="false"></mutation>
+                            <field name="WHERE">FIRST</field>
+                            <value name="VALUE">
+                              <block type="s4d_message_content" id="l4hnw;,qnK0$$E*80|sJ"></block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="text" id="=4{U?$/K#H#]F}xGTKQ|">
+                            <field name="TEXT">?</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="controls_if" id="Hne~,A;g#R%1=v`9Ybnv">
+                        <value name="IF0">
+                          <block type="logic_compare" id="Rxp+-s`Nz_k}g9uo8VH}">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="text_charAt" id="ckl9#J})bT#:QB_y49pF">
+                                <mutation at="false"></mutation>
+                                <field name="WHERE">FIRST</field>
+                                <value name="VALUE">
+                                  <block type="s4d_message_content" id="K;i3q`_z}dsvM$c8M[mu"></block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="text" id="o=BTo=_/pcI!~0ew6aV/">
+                                <field name="TEXT">-</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="controls_if" id="qC^QsBa=3$,isRs}2vWz">
+                            <value name="IF0">
+                              <block type="logic_compare" id="iC}mrcKbwPlk0$6AW,i~">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="text_charAt" id="+g^1CSIY@iwB|Dq=|5=r">
+                                    <mutation at="false"></mutation>
+                                    <field name="WHERE">FIRST</field>
+                                    <value name="VALUE">
+                                      <block type="s4d_message_content" id="7kV?K.[RP8sA0Uv=WVdy"></block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="text" id="p+*xz[{0[}bGJ(tzxNO5">
+                                    <field name="TEXT">.</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="controls_if" id="@~/5r?[P{wN=.KyI/4x)">
+                                <value name="IF0">
+                                  <block type="logic_compare" id="+E*3m-SD@vNhlAGPtxUI">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="text_charAt" id="+mZpa[3A|f7/TXYMCBRI">
+                                        <mutation at="false"></mutation>
+                                        <field name="WHERE">FIRST</field>
+                                        <value name="VALUE">
+                                          <block type="s4d_message_content" id="A6Bi73~USb^T+f3OlS9{"></block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="text" id="M5S/8pV^-s4W$QYx3o-/">
+                                        <field name="TEXT">;;</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="controls_if" id="w}))Gh?[{lWY_=as/]-/">
+                                    <value name="IF0">
+                                      <block type="logic_compare" id="s;QQ1X7).8!23K5Q|o0E">
+                                        <field name="OP">EQ</field>
+                                        <value name="A">
+                                          <block type="text_charAt" id="$VBW$~5m%[L5b/1RD^8t">
+                                            <mutation at="false"></mutation>
+                                            <field name="WHERE">FIRST</field>
+                                            <value name="VALUE">
+                                              <block type="s4d_message_content" id="tX!?n$;~;@/ctZf;XF-S"></block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="text" id="C8dY0BN{4oq@.4=QcOY4">
+                                            <field name="TEXT">_</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="controls_if" id="r;yO}/j#5Rs4QcR2e/~/">
+                                        <value name="IF0">
+                                          <block type="logic_compare" id="cz3;BVg/{Y8fd-]Spx,.">
+                                            <field name="OP">EQ</field>
+                                            <value name="A">
+                                              <block type="text_charAt" id="bd@D6_cQ]T)rRZesOsw]">
+                                                <mutation at="false"></mutation>
+                                                <field name="WHERE">FIRST</field>
+                                                <value name="VALUE">
+                                                  <block type="s4d_message_content" id="H{aR@%2P;ht{QLjpfPd["></block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="text" id="_:`RT6:`@tAV+s`;OCwo">
+                                                <field name="TEXT">ch!</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block type="controls_if" id="}$HGHZ8G?li84*2E1~XJ">
+                                            <value name="IF0">
+                                              <block type="logic_compare" id="JLx*U}sl#e!$()(5Aaf{">
+                                                <field name="OP">EQ</field>
+                                                <value name="A">
+                                                  <block type="text_charAt" id="Z%)zsH!lm+z?X_gs5kF+">
+                                                    <mutation at="false"></mutation>
+                                                    <field name="WHERE">FIRST</field>
+                                                    <value name="VALUE">
+                                                      <block type="s4d_message_content" id="_@{BhN6uEs#k9;_NU5vI"></block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="text" id="Y!8ZUcwK#B.77Dm4Ty=q">
+                                                    <field name="TEXT">zt!</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO0">
+                                              <block type="s4d_delete" id="t3_RiT.4iItQ#=Y{R@.O">
+                                                <next>
+                                                  <block type="s4d_reply" id="0SV}BklQ;YT(ki^Z6~Yq">
+                                                    <value name="CONTENT">
+                                                      <shadow type="text" id="kFIJ/z|fUgX[nrXN?~KL">
+                                                        <field name="TEXT">Hey!</field>
+                                                      </shadow>
+                                                      <block type="text_join" id="m!p`6?C^q.V~C(vMhCO}">
+                                                        <mutation items="2"></mutation>
+                                                        <value name="ADD0">
+                                                          <block type="text" id="LqV22uTocA%v?/@]?br)">
+                                                            <field name="TEXT">** Yêu cầu chat ở </field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="ADD1">
+                                                          <block type="s4d_get_channel" id="qd_{6uM(rYeiCS=s0)^.">
+                                                            <field name="SEARCH_TYPE">ID</field>
+                                                            <value name="VALUE">
+                                                              <block type="text" id="g@}_Y5u}lb3%nzJ)Uj*+">
+                                                                <field name="TEXT">806815363438346260</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </statement>
+                                          </block>
+                                        </statement>
+                                      </block>
+                                    </statement>
+                                  </block>
+                                </statement>
+                              </block>
+                            </statement>
+                          </block>
+                        </statement>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
